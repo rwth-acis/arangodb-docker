@@ -1,8 +1,8 @@
-FROM ubuntu:14.04
-MAINTAINER Frank Celler <info@arangodb.com>
+FROM learninglayers/base
+MAINTAINER Sadik Bakiu <bakiu@dbis.rwth-aachen.de>
 
 # for local installation, uncomment
-# ADD ./arangodb /install
+#ADD ./arangodb /install
 
 # add scripts to install and run ArangoDB
 ADD ./scripts /scripts
@@ -14,7 +14,7 @@ ADD ./HELP.md /HELP.md
 RUN ./scripts/install.sh
 
 # expose data, apps and logs
-VOLUME ["/data", "/apps", "/apps-dev", "/logs"]
+# VOLUME ["/data", "/apps", "/apps-dev", "/logs"]
 
 # standard port
 EXPOSE 8529
