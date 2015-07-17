@@ -3,10 +3,10 @@ This repo contains Dockerfiles for the volumes and ArangoDB Server. ArangoDB is 
 
 # How to Run 
 1. First run arangodb-data
-```
-Run command here
-```
+	```
+	Run command here
+	```
 2. Run arangodb
-```
-Run command here
-```
+	```
+	Run command here
+	```
